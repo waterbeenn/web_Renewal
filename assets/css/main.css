@@ -1,0 +1,273 @@
+/* 메인 페이지 스타일 */
+
+#wrap {
+    width: 100%;
+}
+
+/* 헤더 */
+#wrap #header {
+    width: 100%;
+    height: 80px;
+    min-width: 1440px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#header:hover {
+    background: #000;
+    transition: 0.6s;
+}
+
+#header .nav a img {
+    vertical-align: middle;
+}
+#header .nav {
+    display: flex;
+    width: 1440px;
+    line-height: 80px;
+    justify-content: space-between;
+}
+
+#header .nav ul {
+    display: flex;
+    margin: 0 50px;
+}
+
+#header .nav ul li a {
+    display: block;
+    height: 80px;
+    padding: 0 50px;
+    color: #fafafa;
+}
+
+#header .nav .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+#header .nav .icons p {
+    display: block;
+    padding: 20px;
+    cursor: pointer;
+}
+
+#header .nav .icons p img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* 메인 배너 */
+#main {
+    display: flex;
+    justify-content: center;
+    height: 920px;
+    min-width: 1440px;
+}
+
+#main .con {
+    width: 1440px;
+    padding-top: 270px;
+    color: #fafafa;
+}
+
+#main .con > p {
+    font-size: 22px;
+    margin-top: 32px;
+}
+
+#main .con .btn_arrow {
+    display: flex;
+    margin-top: 250px;
+    gap: 10px;
+}
+
+#main .con .btn_arrow p,
+#main .con .btn_arrow p i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main .con .btn_arrow p i {
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* 콘텐츠 1, solution */
+
+#contents .con {
+    display: flex;
+    justify-content: center;
+    min-width: 1440px;
+    padding: 120px 0;
+}
+#contents .con.con1 .inner {
+    width: 1440px;
+}
+
+#contents .con.con1 .content1 {
+    display: flex;
+    padding: 100px 0;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+#contents .con.con1 .inner ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+#contents .con.con1 .inner ul li {
+    background: #ddd;
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+}
+
+#contents .con.con1 .btn_more {
+    width: 173px;
+    height: 53px;
+    border: 1px solid #bababa;
+    font-size: 16px;
+    gap: 20px;
+    margin-top: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#contents .con.con1 .btn_more:hover {
+    border: 1px solid #009c83;
+    background: #00b094;
+    color: #fafafa;
+    transition: 0.3s;
+}
+
+#contents .con.con1 .left,
+#contents .con.con1 .indicator {
+    padding-left: 100px;
+}
+#contents .con.con1 .indicator {
+    margin-top: 100px;
+}
+#contents .con.con1 .left > h4 {
+    margin-bottom: 40px;
+}
+#contents .con.con1 .right {
+    width: 360px;
+    height: 360px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #2b0a6c 0%, #000 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 콘텐츠 2, service */
+
+/* 콘텐츠 3, security issue */
+
+.con3 .inner .list {
+    display: flex;
+    margin-top: 76px;
+}
+
+.con3 .inner .list .item {
+    background: #2c2c2c;
+    color: #fafafa;
+    width: 100%;
+    height: 250px;
+    margin-right: 27px;
+    padding: 30px;
+    position: relative;
+}
+.con3 .inner .list .item .label {
+    display: block;
+    text-align: center;
+    padding: 3px 11px;
+    width: 70px;
+    height: 26px;
+    margin-bottom: 15px;
+    color: #00b094;
+    background: #000;
+}
+
+.con3 .inner .list .item span.date {
+    font-size: 14px;
+    position: absolute;
+    margin-bottom: 50px;
+    bottom: 0;
+}
+
+.con3 .inner .list:nth-last-child {
+    margin-right: 0px;
+}
+
+.con3 .inner .list .item p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.con3 .inner .btn_magazine {
+    display: flex;
+    width: 50%;
+    height: 190px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 50.07%, rgba(255, 255, 255, 0.3) 100%),
+        #00c3a4;
+}
+
+.con3 .inner .btn_magazine {
+    
+    color: #fff;
+}
+.con3 .inner .btn_magazine .btnText {
+    display: flex;
+    background: #000;
+    margin-top: 60px;
+    margin-left: 66px;
+}
+
+.con3 .inner .btn_magazine .month {
+    font-family: 'Outfit';
+    font-size: 120px;
+    font-weight: 200;
+}
+
+.con3 .inner .btn_magazine .title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.con3 .inner .btn_magazine .date {
+    font-weight: 500;
+}
+
+.con3 .inner .btn_magazine .magazine_arrow {
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+
+#visual .bg {
+    width: 100%;
+    height: 1000px;
+    min-width: 1440px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+#visual .bg video {
+    width: 100%;
+    height: 1000px;
+    min-width: 1440px;
+    display: block;
+    object-fit: cover;
+}

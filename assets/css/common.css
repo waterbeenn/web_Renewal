@@ -1,0 +1,95 @@
+/* 공통 레이아웃 스타일 */
+body {
+    background-color: #fafafa;
+    color: #1f1f1f;
+    font-family: 'Pretendard';
+    font-size: 18px;
+    font-style: normal;
+    line-height: 145%; /* 110.2px */
+    letter-spacing: -0.45px;
+}
+
+h2 {
+    /* 메인 배너 */
+    font-family: 'Pretendard';
+    font-size: 76px;
+    font-weight: 700;
+    letter-spacing: -1.9px;
+}
+
+h3 {
+    /* 콘텐츠 타이틀 */
+    font-family: 'Outfit';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 145%; /* 69.6px */
+    letter-spacing: -0.48px;
+}
+
+h4 {
+    /* 콘텐츠 내 타이틀 */
+    font-family: 'Outfit';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 145%; /* 46.4px */
+    letter-spacing: -0.32px;
+}
+
+/* 삭제 */
+.con {
+    border: 1px solid #000;
+}
+
+#contents .con {
+    display: flex;
+    justify-content: center;
+    min-width: 1440px;
+    padding: 120px 0;
+}
+
+#contents .con .inner > p {
+    margin-top: 30px;
+}
+
+#contents .con.con1 .inner,
+#contents .con.con2 .inner,
+#contents .con.con3 .inner,
+#contents .con.con4 .inner,
+#contents .con.con5 .inner {
+    width: 1440px;
+}
+
+#contents .con.con1 h3,
+#contents .con.con2 h3,
+#contents .con.con3 h3,
+#contents .con.con4 h3,
+#contents .con.con5 h3 {
+    display: flex;
+    position: relative;
+}
+
+.con1 h3::before,
+.con2 h3::before,
+.con3 h3::before,
+.con5 h3::before {
+    content: '';
+    position: absolute;
+    width: 104px;
+    height: 6px;
+    left: -20px;
+    top: -16px;
+    background-color: #1f1f1f;
+}
+
+.con1 h3::after,
+.con2 h3::after,
+.con3 h3::after,
+.con5 h3::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 38px;
+    top: -10px;
+    left: -26px;
+    background-color: #1f1f1f;
+}

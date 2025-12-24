@@ -47,15 +47,15 @@ h4 {
     padding: 120px 0;
 }
 
-#contents .con .inner > p {
+#contents .con1 .inner > p,
+#contents .con2 .inner > p,
+#contents .con3 .inner > p,
+#contents .con4 .inner > p,
+#contents .con5 .inner > p     {
     margin-top: 30px;
 }
 
-#contents .con.con1 .inner,
-#contents .con.con2 .inner,
-#contents .con.con3 .inner,
-#contents .con.con4 .inner,
-#contents .con.con5 .inner {
+#contents .con .inner {
     width: 1440px;
 }
 
@@ -92,4 +92,19 @@ h4 {
     top: -10px;
     left: -26px;
     background-color: #1f1f1f;
+}
+
+.con5 .inner .hr_card .card2::before,
+.con5 .inner .hr_card .card3::before,
+.con5 .inner .hr_card .card4::before,
+.con5 .inner .hr_card .card5::before,
+.con5 .inner .hr_card .card6::before,
+.con5 .inner .hr_card .card8::before {
+    content: '';
+    position: absolute;
+    opacity: 0.08;
+    top: 100px;
+    left: 130px;
+    right: 0px;
+    bottom: 0px;
 }

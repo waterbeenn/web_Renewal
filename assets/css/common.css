@@ -35,11 +35,6 @@ h4 {
     letter-spacing: -0.32px;
 }
 
-/* 삭제 */
-.con {
-    border: 1px solid #000;
-}
-
 #contents .con {
     display: flex;
     justify-content: center;
@@ -51,12 +46,15 @@ h4 {
 #contents .con2 .inner > p,
 #contents .con3 .inner > p,
 #contents .con4 .inner > p,
-#contents .con5 .inner > p     {
+#contents .con5 .inner > p {
     margin-top: 30px;
 }
 
 #contents .con .inner {
     width: 1440px;
+}
+#contents .con.con4 {
+    height: 900px;
 }
 
 #contents .con.con1 h3,
@@ -98,8 +96,7 @@ h4 {
 .con5 .inner .hr_card .card3::before,
 .con5 .inner .hr_card .card4::before,
 .con5 .inner .hr_card .card5::before,
-.con5 .inner .hr_card .card6::before,
-.con5 .inner .hr_card .card8::before {
+.con5 .inner .hr_card .card6::before {
     content: '';
     position: absolute;
     opacity: 0.08;

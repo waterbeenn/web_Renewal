@@ -74,7 +74,7 @@
 
 #main .con > p {
     font-size: 22px;
-    margin-top: 32px;
+    margin-top: 50px;
 }
 
 #main .con .btn_arrow {
@@ -175,12 +175,12 @@
     margin-top: 120px;
 }
 
-.con2 .inner .service_list .list{
+.con2 .inner .service_list .list {
     width: 100px;
     height: 484px;
     background: #004439;
     box-sizing: border-box;
-    border: 1px solid #1F1F1F;
+    border: 1px solid #1f1f1f;
     margin-right: -1px;
     display: flex;
     justify-content: center;
@@ -190,14 +190,13 @@
 .con2 .inner .service_list .list p {
     color: #fff;
     writing-mode: vertical-rl;
-    text-orientation: sideways; 
+    text-orientation: sideways;
     white-space: nowrap;
     font-size: 30px;
     font-weight: 700;
     margin: 0;
-    
 }
-.con2 .inner .service_list .list:last-child{
+.con2 .inner .service_list .list:last-child {
     margin-right: 0;
 }
 
@@ -301,6 +300,83 @@
 }
 
 /* 콘텐츠 4, visual */
+.con {
+    position: relative;
+}
+.con4 .inner {
+    display: flex;
+}
+.con4 .inner .left {
+    width: 40%;
+    padding-top: 200px;
+    /* background: #000; */
+}
+.con4 .inner .left .btn {
+    display: flex;
+    margin-top: 100px;
+    gap: 30px;
+}
+
+.con4 .inner .left .btn p {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.con4 .inner .left .btn p:hover {
+    background: #ddd;
+    cursor: pointer;
+}
+
+.con4 .inner .right {
+    position: absolute;
+    width: 50%;
+    height: 800px;
+    background-image: url(/assets/images/common/con4_background.jpg);
+    top: 130px;
+    right: 0;
+    overflow: hidden;
+}
+.con4 .inner .right .cardbox {
+    position: relative;
+}
+
+.con4 .inner .right .cardList {
+    display: flex;
+    position: absolute;
+    left: -180px;
+    top: 240px;
+    gap: 20px;
+}
+.con4 .inner .right .postcard {
+    display: inline-block;
+    width: 280px;
+    height: 400px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(5px);
+    position: relative;
+}
+.con4 .inner .right .postcard p {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 70px 50px 0 30px;
+}
+
+.con4 .inner .right .postcard img {
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+}
+
+.con4 .inner .right .postcard:nth-child(2) {
+    transform: translateY(-100px);
+}
 
 /* 콘텐츠 5, igloo people */
 .con5 .inner .hr_card {
@@ -359,6 +435,14 @@
     padding-right: 28px;
     word-break: keep-all;
 }
+
+.con5 .inner .hr_card .card .career {
+    color: #171717;
+    font-size: 15px;
+    text-decoration-line: underline;
+    margin-top: 40px;
+}
+
 .con5 .inner .hr_card .card8 .title,
 .con5 .inner .hr_card .card8 .subtitle,
 .con5 .inner .hr_card .card8 .btn_apply {
@@ -382,10 +466,24 @@
 
 .con5 .inner .hr_card .card8 .btn_apply {
     display: inline-flex;
-    padding: 15px 35px;
+    padding: 15px 33px;
     justify-content: center;
     align-items: center;
+    gap: 10px;
     border: 1px solid #bababa;
+}
+.con5 .inner .hr_card .card8 .btn_apply i {
+    font-size: 25px;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+.con5 .inner .hr_card .card8 .btn_apply:hover {
+    cursor: pointer;
+    border: 1px solid #009c83;
+    background: #00b094;
+    color: #fafafa;
+    transition: 0.3s;
 }
 
 .con5 .inner .hr_card .card2 {
@@ -481,32 +579,37 @@
     backdrop-filter: blur(5px);
 }
 
-.con7 {
+#footer {
     background: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    min-width: 1440px;
+    padding: 50px 0;
 }
 
-.con7 .inner {
+#footer .inner {
     color: #999;
     font-size: 15px;
+    width: 1440px;
 }
-.con7 .inner a {
+#footer .inner a {
     color: inherit;
 }
-.con7 .inner .adr {
+#footer .inner .adr {
     margin-top: 130px;
 }
 
-.con7 .inner .array {
+#footer .inner .array {
     display: flex;
     justify-content: space-between;
     align-items: end;
 }
-.con7 .inner .array .gap {
+#footer .inner .array .gap {
     margin-left: 30px;
     margin-right: 30px;
 }
 
-.con7 .inner .array .sns_box ul li a {
+#footer .inner .array .sns_box ul li a {
     margin-right: 5px;
 }
 

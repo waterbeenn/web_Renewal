@@ -133,13 +133,19 @@
     height: 53px;
     border: 1px solid #bababa;
     font-size: 16px;
-    gap: 20px;
+    gap: 10px;
     margin-top: 130px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 }
+#contents .con.con1 .btn_more i {
+    font-size: 25px;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
 #contents .con.con1 .btn_more:hover {
     border: 1px solid #009c83;
     background: #00b094;
@@ -186,6 +192,7 @@
     justify-content: center;
     align-items: flex-start;
     padding-top: 50px;
+    cursor: pointer;
 }
 .con2 .inner .service_list .list p {
     color: #fff;
@@ -216,6 +223,7 @@
     height: 250px;
     padding: 30px;
     position: relative;
+    cursor: pointer;
 }
 
 .con3 .inner .list .item:last-child {
@@ -254,6 +262,7 @@
 
 .con3 .inner .btn_magazine {
     display: flex;
+    cursor: pointer;
     width: 48.1%;
     height: 190px;
     border-radius: 40px;
@@ -261,6 +270,11 @@
     overflow: hidden;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 50.07%, rgba(255, 255, 255, 0.3) 100%),
         #00c3a4;
+}
+
+.con3 .inner .btn_magazine:hover {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 50.07%, rgba(255, 255, 255, 0.3) 100%),
+        #00B094;
 }
 
 .con3 .inner .btn_magazine {
@@ -277,7 +291,6 @@
     margin-left: 50px;
     margin-bottom: 60px;
 }
-
 .con3 .inner .btn_magazine .month {
     font-family: 'Outfit';
     font-size: 120px;
@@ -297,6 +310,18 @@
     display: block;
     position: absolute;
     bottom: 0;
+}
+
+.con3 .inner .btn_magazine:hover .magazine_arrow {
+    animation: magazine_hover 1s infinite;
+}
+@keyframes magazine_hover {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: 50px;
+    }
 }
 
 /* 콘텐츠 4, visual */
@@ -353,6 +378,7 @@
 }
 .con4 .inner .right .postcard {
     display: inline-block;
+    cursor: pointer;
     width: 280px;
     height: 400px;
     border-radius: 20px;
@@ -577,6 +603,10 @@
     color: #fff;
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(5px);
+    gap: 10px;
+}
+.con6 .inner .btn_contact:hover {
+    background: rgba(255, 255, 255, 0.5);
 }
 
 #footer {

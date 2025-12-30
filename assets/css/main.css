@@ -274,7 +274,7 @@
 
 .con3 .inner .btn_magazine:hover {
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 50.07%, rgba(255, 255, 255, 0.3) 100%),
-        #00B094;
+        #00b094;
 }
 
 .con3 .inner .btn_magazine {
@@ -658,4 +658,32 @@
     min-width: 1440px;
     display: block;
     object-fit: cover;
+}
+
+.swiper {
+    width: 100%;
+    height: 500px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.swiper-pagination {
+}
+
+/* 이전 */
+.swiper-slide .swiper-slide-prev {
+}
+/* 현재 */
+.swiper-slide .swiper-slide-visible .swiper-slide-fully-visible .swiper-slide-active {
+}
+/* 다음 */
+.swiper-slide .swiper-slide-next {
 }

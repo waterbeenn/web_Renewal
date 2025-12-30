@@ -22,12 +22,15 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.3/xeicon.min.css"
         />
+        <!-- Swiper JS -->
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
         />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script type="module" src="/assets/js/main.js"></script>
         <!-- X Icon -->
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
         <link rel="stylesheet" href="assets/css/reset.css" />
         <link rel="stylesheet" href="assets/css/common.css" />
         <link rel="stylesheet" href="assets/css/main.css" />
@@ -77,6 +80,7 @@
                         <h3>SOLUTION</h3>
                         <div class="content1">
                             <div class="left">
+                                <!-- swiper 들어가야 할 자리 -->
                                 <h4>SPiDER ExD</h4>
                                 <p>
                                     포괄적 관점에서 보안 운영 효율성을 높이는 통합형 보안 정보 및
@@ -90,6 +94,7 @@
                             <div class="right">
                                 <img src="./assets/images/common/con1_img1.png" alt="" />
                             </div>
+                            <!-- 여기까지 -->
                         </div>
                         <div class="indicator">
                             <ul>
@@ -218,19 +223,19 @@
                                 <ul class="cardList">
                                     <li class="postcard">
                                         <p>인공지능 공급망 공격과 AI 생태계의 사이버 복원력 위협</p>
-                                        <img src="/assets/images/common/con4_img0.svg" alt="">
+                                        <img src="/assets/images/common/con4_img0.svg" alt="" />
                                     </li>
                                     <li class="postcard">
                                         <p>인공지능 공급망 공격과 AI 생태계의 사이버 복원력 위협</p>
-                                        <img src="/assets/images/common/con4_img2.svg" alt="">
+                                        <img src="/assets/images/common/con4_img2.svg" alt="" />
                                     </li>
                                     <li class="postcard">
                                         <p>국가 망 보안체계 기반 제로트러스트 확산</p>
-                                        <img src="/assets/images/common/con4_img3.svg" alt="">
+                                        <img src="/assets/images/common/con4_img3.svg" alt="" />
                                     </li>
                                     <li class="postcard">
                                         <p>대규모 사이버 공격과 진화된 랜섬웨어 위협</p>
-                                        <img src="/assets/images/common/con4_img4.svg" alt="">
+                                        <img src="/assets/images/common/con4_img4.svg" alt="" />
                                     </li>
                                 </ul>
                             </div>
@@ -366,13 +371,24 @@
                     ></video>
                 </div>
             </section>
-        </div>
 
+            <!-- Swiper -->
+            <div class="swiper mainBanner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
         <!-- js -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="assets/js/lib/"></script>
         <script src="assets/js/plugin.js"></script>
         <script src="assets/js/common.js"></script>
-        <script src="assets/js/main.js"></script>
     </body>
 </html>
